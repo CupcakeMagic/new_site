@@ -32,93 +32,93 @@ The other is used to edit a specific mod, and is opened by double-clicking the m
 The Mod Editor window lists all mod items in a tree view in the left column, and their properties in the right column. From the menu you can add new ModItem items, test the mod, or upload it to Steam Workshop.
 
 ## Gameplay
-In the [Gameplay](docs/LuaFunctionDoc_Gameplay.md.html) section you can find more information about implementing gameplay effects related to [Technologies](docs/ModItemTechnology.md.html), [Mission Sponsors](docs/ModItemMissionSponsor.md.html), [Commander Profiles](docs/ModItemCommanderProfile.md.html), [Research](docs/Research.md.html) or [Colonists](docs/Colonists.md.html).
+In the [Gameplay](LuaFunctionDoc_Gameplay.md.html) section you can find more information about implementing gameplay effects related to [Technologies](ModItemTechnology.md.html), [Mission Sponsors](ModItemMissionSponsor.md.html), [Commander Profiles](ModItemCommanderProfile.md.html), [Research](Research.md.html) or [Colonists](Colonists.md.html).
 
 Mod Items
 ---------
 
 Here are the supported mod item types:
 
-[Entity](docs/ModItemEntity.md.html)
+[Entity](ModItemEntity.md.html)
 : Import art assets from Blender.
 
-[Mission Sponsor](docs/ModItemMissionSponsor.md.html)
+[Mission Sponsor](ModItemMissionSponsor.md.html)
 : Define new mission sponsors.
 
-[Commander Profile](docs/ModItemCommanderProfile.md.html)
+[Commander Profile](ModItemCommanderProfile.md.html)
 : Define new commander profiles.
 
-[Mission Logo](docs/ModItemMissionLogo.md.html)
+[Mission Logo](ModItemMissionLogo.md.html)
 : Allows you to create new mission logos to decorate your buildings.
 
-[Technology](docs/ModItemTechnology.md.html)
+[Technology](ModItemTechnology.md.html)
 : Define new technologies.
 
-[Game Rule](docs/ModItemGameRule.md.html)
+[Game Rule](ModItemGameRule.md.html)
 : Define new Game Rules
 
-[Code](docs/ModItemCode.md.html)
+[Code](ModItemCode.md.html)
 : Do almost anything - but make sure you read the Lua Environment section first!
 
-[Building Template](docs/ModItemBuildingTemplate.md.html)
+[Building Template](ModItemBuildingTemplate.md.html)
 : Make new versions of existing buildings with different parameters.
 
-[Farm Crop](docs/ModItemCrop.md.html)
+[Farm Crop](ModItemCrop.md.html)
 : Define new crops for the farms.
 
-[Colonist Trait](docs/ModItemTrait.md.html)
+[Colonist Trait](ModItemTrait.md.html)
 : Define new colonist trait.
 
-[Attachment](docs/ModItemAttachment.md.html)
+[Attachment](ModItemAttachment.md.html)
 : Attach decorative objects to buildings.
 
-[Photo Filter](docs/ModItemPhotoFilter.md.html)
+[Photo Filter](ModItemPhotoFilter.md.html)
 : Define new postprocessing filters used in the Photo Mode.
 
-[RadioStation](docs/ModItemRadioStation.md.html)
+[RadioStation](ModItemRadioStation.md.html)
 : Import a set of tracks to define a new radio station.
 
-[Lightmodel](docs/ModItemLightmodel.md.html)
+[Lightmodel](ModItemLightmodel.md.html)
 : Define a set of lighting parameters controlling the look of the day/night cycle.
 
-[Localization Table](docs/ModItemLocTable.md.html)
+[Localization Table](ModItemLocTable.md.html)
 : Add translation tables to localize the game in other languages.
 
 Lua Environment
 ---------------
 
-Most of *Surviving Mars* is written in the [Lua](docs/LuaBasics.md.html) programming language, and mods can add Lua code to replace, modify or extend large parts of the base game. *Surviving Mars* uses [Lua 5.3](http://www.lua.org/manual/5.3/ ).
+Most of *Surviving Mars* is written in the [Lua](LuaBasics.md.html) programming language, and mods can add Lua code to replace, modify or extend large parts of the base game. *Surviving Mars* uses [Lua 5.3](http://www.lua.org/manual/5.3/ ).
 
 This section documents some of the basic concepts and the systems built on top of Lua:
 
-[Classes](docs/LuaClasses.md.html)
+[Classes](LuaClasses.md.html)
 : Lua doesn't come with a built-in class system, only with tools for creating one. Here is how our works.
 
-[Threads](docs/LuaThreads.md.html)
+[Threads](LuaThreads.md.html)
 : Cooperative threads are built on top of Lua coroutines and allow for natural expression of game logic.
 
-[Messages](docs/LuaMessages.md.html)
+[Messages](LuaMessages.md.html)
 : Messages are a mechanism for hooking functionality to specific events in the game code, and for synchronizing Lua threads.
 
-[CObjects](docs/LuaCObject.md.html)
+[CObjects](LuaCObject.md.html)
 : This is what the C++ rendering engine knows about the world of the game: objects' position, appearence, animations, etc.
 
-[Map Enumeration](docs/LuaMapEnumeration.md.html)
+[Map Enumeration](LuaMapEnumeration.md.html)
 : This is how Lua code can efficiently query the C++ side about what's where in the world.
 
-[Savegames](docs/LuaSavegame.md.html)
+[Savegames](LuaSavegame.md.html)
 : Savegames work by serializing the entire state of the game world, and work mostly automatically.
 
-[Terrain](docs/LuaTerrain.md.html)
+[Terrain](LuaTerrain.md.html)
 : The functions available in Lua concerning the terrain in the game.
 
-[Hex Grids](docs/LuaMarsHexGrids.md.html)
+[Hex Grids](LuaMarsHexGrids.md.html)
 : General information about the specialised hex grids used in the game.
 
-[Labels](docs/LuaMarsLabels.md.html)
+[Labels](LuaMarsLabels.md.html)
 : Information about the label system for objects with shared traits.
 
-[Pathfinding](docs/Pathfinding.md.html)
+[Pathfinding](Pathfinding.md.html)
 : Information about the pathfinding algorithm.
 
 Lua Reference
@@ -126,40 +126,40 @@ Lua Reference
 
 The following documents describe some of the functions available in Lua, organized by area:
 
-[CObject functions](docs/LuaFunctionDoc_CObject.md.html)
-: Functions for manipulating [CObjects](docs/LuaCObject.md.html).
+[CObject functions](LuaFunctionDoc_CObject.md.html)
+: Functions for manipulating [CObjects](LuaCObject.md.html).
 
-[*point* and *box* functions](docs/LuaFunctionDoc_point.md.html)
+[*point* and *box* functions](LuaFunctionDoc_point.md.html)
 : The *point* and *box* are custom userdata types hold 2D/3D coordinates and 2D/3D ranges and are used for positions, areas, etc. Besides the expected overridden operators, these functions can be used to manipulate them.
 
-[I/O functions](docs/LuaFunctionDoc_AsyncIO.md.html)
+[I/O functions](LuaFunctionDoc_AsyncIO.md.html)
 : These functions can be used to implement efficient file input/output.
 
-[Global Lua functions](docs/LuaFunctionDoc__G.md.html)
+[Global Lua functions](LuaFunctionDoc__G.md.html)
 : These are functions that don't fall in any of the other categories.
 
-[Hex grid functions](docs/LuaFunctionDoc_hex.md.html)
+[Hex grid functions](LuaFunctionDoc_hex.md.html)
 : Functions for working with hex grids coordinates.
 
-[ObjectGrid functions](docs/LuaFunctionDoc_GridObject.md.html)
+[ObjectGrid functions](LuaFunctionDoc_GridObject.md.html)
 : Functions for working with the hex grids holding information about buildings and how they take up space in the hex grid.
 
-[SupplyGrid functions](docs/LuaFunctionDoc_SupplyGrid.md.html)
+[SupplyGrid functions](LuaFunctionDoc_SupplyGrid.md.html)
 : Functions for working with the hex grids holding information about the electricity and water/air supply networks.
 
-[Selection functions](docs/LuaFunctionDoc_Selection.md.html)
+[Selection functions](LuaFunctionDoc_Selection.md.html)
 : Functions for working with cursor position and selection.
 
-[Gameplay functions](docs/LuaFunctionDoc_Gameplay.md.html)
+[Gameplay functions](LuaFunctionDoc_Gameplay.md.html)
 : These are functions for implementing gameplay effects.
 
-[Camera functions](docs/LuaFunctionDoc_camera.md.html)
-: Functions for working with the camera. The [fly camera](docs/LuaFunctionDoc_cameraFly.md.html), [max camrea](docs/LuaFunctionDoc_cameraMax.md.html) and [RTS camera](docs/LuaFunctionDoc_cameraRTS.md.html) could also be separately modified.
+[Camera functions](LuaFunctionDoc_camera.md.html)
+: Functions for working with the camera. The [fly camera](LuaFunctionDoc_cameraFly.md.html), [max camrea](LuaFunctionDoc_cameraMax.md.html) and [RTS camera](LuaFunctionDoc_cameraRTS.md.html) could also be separately modified.
 
-[Messages](docs/LuaFunctionDoc_Msg.md.html)
+[Messages](LuaFunctionDoc_Msg.md.html)
 : Functions for working with messages. They are used to affect the game at certain important points, such as the begining of a new day, death of a colonist, etc. 
 
-[Terrain](docs/LuaFunctionDoc_terrain.md.html)
+[Terrain](LuaFunctionDoc_terrain.md.html)
 : Functions for working with terrain
 
 Sample Mods
@@ -199,10 +199,10 @@ Time Capsule
 Sample Mod Assets
 -----------------
 
-Several sample Blender scenes are provided to demonstrate how to structure scenes. They are ready to export and can be used as a starting point for [Entity mods items](docs/ModItemEntity.md.html).
+Several sample Blender scenes are provided to demonstrate how to structure scenes. They are ready to export and can be used as a starting point for [Entity mods items](ModItemEntity.md.html).
 
 SubsurfaceHeater
-: This is the Subsurface Heater building from the game, with a slightly different material. It demonstrates the various metadata necessary for an entity to serve as a building - [spots](docs/LuaCObject.md.html#toc1.5), [surfaces](docs/LuaCObject.md.html#toc1.6), etc.
+: This is the Subsurface Heater building from the game, with a slightly different material. It demonstrates the various metadata necessary for an entity to serve as a building - [spots](LuaCObject.md.html#toc1.5), [surfaces](LuaCObject.md.html#toc1.6), etc.
 
 Cemetery
 : This is a scene for the sample Cemetery mod. It includes the building entity itself, as well as several gravestone entities attached to it by the game logic.
@@ -225,6 +225,6 @@ It is not the entire source of the game and cannot be used to build the game. Su
 
 (insert footer.md.html here)
   <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style>
-  <script src="docs/markdeep.min.js"></script>
+  <script src="markdeep.min.js"></script>
   <script src="https://casual-effects.com/markdeep/latest/markdeep.min.js"></script>
   <script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
