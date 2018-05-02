@@ -23,11 +23,11 @@ The **Mod Editor** is a companion application launched by the *Surviving Mars* m
 
 The Mod Editor has two windows. One lists all mods in the left column, and displays any diagnostic messages produced by the tools in the wider right column:
 
-![Mod Editor Main View](docs/mod_editor.png)
+![Mod Editor Main View](mod_editor.png)
 
 The other is used to edit a specific mod, and is opened by double-clicking the mod's entry in the main editor window.
 
-![Mod Editor - Editing a single mod](docs/mod_editor_item.png)
+![Mod Editor - Editing a single mod](mod_editor_item.png)
 
 The Mod Editor window lists all mod items in a tree view in the left column, and their properties in the right column. From the menu you can add new ModItem items, test the mod, or upload it to Steam Workshop.
 
