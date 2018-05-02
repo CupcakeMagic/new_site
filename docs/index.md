@@ -225,6 +225,6 @@ It is not the entire source of the game and cannot be used to build the game. Su
 
 (insert footer.md.html here)
   <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style>
-  <script src="markdeep.min.js"></script>
+  <script src="docs/markdeep.min.js"></script>
   <script src="https://casual-effects.com/markdeep/latest/markdeep.min.js"></script>
   <script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
