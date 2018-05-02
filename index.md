@@ -23,102 +23,102 @@ The **Mod Editor** is a companion application launched by the *Surviving Mars* m
 
 The Mod Editor has two windows. One lists all mods in the left column, and displays any diagnostic messages produced by the tools in the wider right column:
 
-![Mod Editor Main View](pages/mod_editor.png)
+![Mod Editor Main View](docs/mod_editor.png)
 
 The other is used to edit a specific mod, and is opened by double-clicking the mod's entry in the main editor window.
 
-![Mod Editor - Editing a single mod](pages/mod_editor_item.png)
+![Mod Editor - Editing a single mod](docs/mod_editor_item.png)
 
 The Mod Editor window lists all mod items in a tree view in the left column, and their properties in the right column. From the menu you can add new ModItem items, test the mod, or upload it to Steam Workshop.
 
 ## Gameplay
-In the [Gameplay](pages/LuaFunctionDoc_Gameplay.md.html) section you can find more information about implementing gameplay effects related to [Technologies](pages/ModItemTechnology.md.html), [Mission Sponsors](pages/ModItemMissionSponsor.md.html), [Commander Profiles](pages/ModItemCommanderProfile.md.html), [Research](pages/Research.md.html) or [Colonists](pages/Colonists.md.html).
+In the [Gameplay](docs/LuaFunctionDoc_Gameplay.md.html) section you can find more information about implementing gameplay effects related to [Technologies](docs/ModItemTechnology.md.html), [Mission Sponsors](docs/ModItemMissionSponsor.md.html), [Commander Profiles](docs/ModItemCommanderProfile.md.html), [Research](docs/Research.md.html) or [Colonists](docs/Colonists.md.html).
 
 Mod Items
 ---------
 
 Here are the supported mod item types:
 
-[Entity](pages/ModItemEntity.md.html)
+[Entity](docs/ModItemEntity.md.html)
 : Import art assets from Blender.
 
-[Mission Sponsor](pages/ModItemMissionSponsor.md.html)
+[Mission Sponsor](docs/ModItemMissionSponsor.md.html)
 : Define new mission sponsors.
 
-[Commander Profile](pages/ModItemCommanderProfile.md.html)
+[Commander Profile](docs/ModItemCommanderProfile.md.html)
 : Define new commander profiles.
 
-[Mission Logo](pages/ModItemMissionLogo.md.html)
+[Mission Logo](docs/ModItemMissionLogo.md.html)
 : Allows you to create new mission logos to decorate your buildings.
 
-[Technology](pages/ModItemTechnology.md.html)
+[Technology](docs/ModItemTechnology.md.html)
 : Define new technologies.
 
-[Game Rule](pages/ModItemGameRule.md.html)
+[Game Rule](docs/ModItemGameRule.md.html)
 : Define new Game Rules
 
-[Code](pages/ModItemCode.md.html)
+[Code](docs/ModItemCode.md.html)
 : Do almost anything - but make sure you read the Lua Environment section first!
 
-[Building Template](pages/ModItemBuildingTemplate.md.html)
+[Building Template](docs/ModItemBuildingTemplate.md.html)
 : Make new versions of existing buildings with different parameters.
 
-[Farm Crop](pages/ModItemCrop.md.html)
+[Farm Crop](docs/ModItemCrop.md.html)
 : Define new crops for the farms.
 
-[Colonist Trait](pages/ModItemTrait.md.html)
+[Colonist Trait](docs/ModItemTrait.md.html)
 : Define new colonist trait.
 
-[Attachment](pages/ModItemAttachment.md.html)
+[Attachment](docs/ModItemAttachment.md.html)
 : Attach decorative objects to buildings.
 
-[Photo Filter](pages/ModItemPhotoFilter.md.html)
+[Photo Filter](docs/ModItemPhotoFilter.md.html)
 : Define new postprocessing filters used in the Photo Mode.
 
-[RadioStation](pages/ModItemRadioStation.md.html)
+[RadioStation](docs/ModItemRadioStation.md.html)
 : Import a set of tracks to define a new radio station.
 
-[Lightmodel](pages/ModItemLightmodel.md.html)
+[Lightmodel](docs/ModItemLightmodel.md.html)
 : Define a set of lighting parameters controlling the look of the day/night cycle.
 
-[Localization Table](pages/ModItemLocTable.md.html)
+[Localization Table](docs/ModItemLocTable.md.html)
 : Add translation tables to localize the game in other languages.
 
 Lua Environment
 ---------------
 
-Most of *Surviving Mars* is written in the [Lua](pages/LuaBasics.md.html) programming language, and mods can add Lua code to replace, modify or extend large parts of the base game. *Surviving Mars* uses [Lua 5.3](http://www.lua.org/manual/5.3/ ).
+Most of *Surviving Mars* is written in the [Lua](docs/LuaBasics.md.html) programming language, and mods can add Lua code to replace, modify or extend large parts of the base game. *Surviving Mars* uses [Lua 5.3](http://www.lua.org/manual/5.3/ ).
 
 This section documents some of the basic concepts and the systems built on top of Lua:
 
-[Classes](pages/LuaClasses.md.html)
+[Classes](docs/LuaClasses.md.html)
 : Lua doesn't come with a built-in class system, only with tools for creating one. Here is how our works.
 
-[Threads](pages/LuaThreads.md.html)
+[Threads](docs/LuaThreads.md.html)
 : Cooperative threads are built on top of Lua coroutines and allow for natural expression of game logic.
 
-[Messages](pages/LuaMessages.md.html)
+[Messages](docs/LuaMessages.md.html)
 : Messages are a mechanism for hooking functionality to specific events in the game code, and for synchronizing Lua threads.
 
-[CObjects](pages/LuaCObject.md.html)
+[CObjects](docs/LuaCObject.md.html)
 : This is what the C++ rendering engine knows about the world of the game: objects' position, appearence, animations, etc.
 
-[Map Enumeration](pages/LuaMapEnumeration.md.html)
+[Map Enumeration](docs/LuaMapEnumeration.md.html)
 : This is how Lua code can efficiently query the C++ side about what's where in the world.
 
-[Savegames](pages/LuaSavegame.md.html)
+[Savegames](docs/LuaSavegame.md.html)
 : Savegames work by serializing the entire state of the game world, and work mostly automatically.
 
-[Terrain](pages/LuaTerrain.md.html)
+[Terrain](docs/LuaTerrain.md.html)
 : The functions available in Lua concerning the terrain in the game.
 
-[Hex Grids](pages/LuaMarsHexGrids.md.html)
+[Hex Grids](docs/LuaMarsHexGrids.md.html)
 : General information about the specialised hex grids used in the game.
 
-[Labels](pages/LuaMarsLabels.md.html)
+[Labels](docs/LuaMarsLabels.md.html)
 : Information about the label system for objects with shared traits.
 
-[Pathfinding](pages/Pathfinding.md.html)
+[Pathfinding](docs/Pathfinding.md.html)
 : Information about the pathfinding algorithm.
 
 Lua Reference
@@ -126,40 +126,40 @@ Lua Reference
 
 The following documents describe some of the functions available in Lua, organized by area:
 
-[CObject functions](pages/LuaFunctionDoc_CObject.md.html)
-: Functions for manipulating [CObjects](pages/LuaCObject.md.html).
+[CObject functions](docs/LuaFunctionDoc_CObject.md.html)
+: Functions for manipulating [CObjects](docs/LuaCObject.md.html).
 
-[*point* and *box* functions](pages/LuaFunctionDoc_point.md.html)
+[*point* and *box* functions](docs/LuaFunctionDoc_point.md.html)
 : The *point* and *box* are custom userdata types hold 2D/3D coordinates and 2D/3D ranges and are used for positions, areas, etc. Besides the expected overridden operators, these functions can be used to manipulate them.
 
-[I/O functions](pages/LuaFunctionDoc_AsyncIO.md.html)
+[I/O functions](docs/LuaFunctionDoc_AsyncIO.md.html)
 : These functions can be used to implement efficient file input/output.
 
-[Global Lua functions](pages/LuaFunctionDoc__G.md.html)
+[Global Lua functions](docs/LuaFunctionDoc__G.md.html)
 : These are functions that don't fall in any of the other categories.
 
-[Hex grid functions](pages/LuaFunctionDoc_hex.md.html)
+[Hex grid functions](docs/LuaFunctionDoc_hex.md.html)
 : Functions for working with hex grids coordinates.
 
-[ObjectGrid functions](pages/LuaFunctionDoc_GridObject.md.html)
+[ObjectGrid functions](docs/LuaFunctionDoc_GridObject.md.html)
 : Functions for working with the hex grids holding information about buildings and how they take up space in the hex grid.
 
-[SupplyGrid functions](pages/LuaFunctionDoc_SupplyGrid.md.html)
+[SupplyGrid functions](docs/LuaFunctionDoc_SupplyGrid.md.html)
 : Functions for working with the hex grids holding information about the electricity and water/air supply networks.
 
-[Selection functions](pages/LuaFunctionDoc_Selection.md.html)
+[Selection functions](docs/LuaFunctionDoc_Selection.md.html)
 : Functions for working with cursor position and selection.
 
-[Gameplay functions](pages/LuaFunctionDoc_Gameplay.md.html)
+[Gameplay functions](docs/LuaFunctionDoc_Gameplay.md.html)
 : These are functions for implementing gameplay effects.
 
-[Camera functions](pages/LuaFunctionDoc_camera.md.html)
-: Functions for working with the camera. The [fly camera](pages/LuaFunctionDoc_cameraFly.md.html), [max camrea](pages/LuaFunctionDoc_cameraMax.md.html) and [RTS camera](pages/LuaFunctionDoc_cameraRTS.md.html) could also be separately modified.
+[Camera functions](docs/LuaFunctionDoc_camera.md.html)
+: Functions for working with the camera. The [fly camera](docs/LuaFunctionDoc_cameraFly.md.html), [max camrea](docs/LuaFunctionDoc_cameraMax.md.html) and [RTS camera](docs/LuaFunctionDoc_cameraRTS.md.html) could also be separately modified.
 
-[Messages](pages/LuaFunctionDoc_Msg.md.html)
+[Messages](docs/LuaFunctionDoc_Msg.md.html)
 : Functions for working with messages. They are used to affect the game at certain important points, such as the begining of a new day, death of a colonist, etc. 
 
-[Terrain](pages/LuaFunctionDoc_terrain.md.html)
+[Terrain](docs/LuaFunctionDoc_terrain.md.html)
 : Functions for working with terrain
 
 Sample Mods
@@ -199,10 +199,10 @@ Time Capsule
 Sample Mod Assets
 -----------------
 
-Several sample Blender scenes are provided to demonstrate how to structure scenes. They are ready to export and can be used as a starting point for [Entity mods items](pages/ModItemEntity.md.html).
+Several sample Blender scenes are provided to demonstrate how to structure scenes. They are ready to export and can be used as a starting point for [Entity mods items](docs/ModItemEntity.md.html).
 
 SubsurfaceHeater
-: This is the Subsurface Heater building from the game, with a slightly different material. It demonstrates the various metadata necessary for an entity to serve as a building - [spots](pages/LuaCObject.md.html#toc1.5), [surfaces](pages/LuaCObject.md.html#toc1.6), etc.
+: This is the Subsurface Heater building from the game, with a slightly different material. It demonstrates the various metadata necessary for an entity to serve as a building - [spots](docs/LuaCObject.md.html#toc1.5), [surfaces](docs/LuaCObject.md.html#toc1.6), etc.
 
 Cemetery
 : This is a scene for the sample Cemetery mod. It includes the building entity itself, as well as several gravestone entities attached to it by the game logic.
