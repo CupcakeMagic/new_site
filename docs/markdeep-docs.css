@@ -7,11 +7,13 @@
  * https://github.com/aras-p/markdeep-docs-style
  */
 body {
-	max-width: 75%;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-align: left;
+	max-width: 960px;
+	text-align: justify;
 	margin: 0;
 	padding: 0 1em;
+	visibility:hidden;
+	white-space:pre;
+	font-family:monospace
 }
 
 /* if screen is wide enough, put table of contents on the right side */
