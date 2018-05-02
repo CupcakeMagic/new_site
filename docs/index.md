@@ -231,4 +231,3 @@ A significant part of the Lua source code and data of Surviving Mars is availabl
 It is not the entire source of the game and cannot be used to build the game. Surviving Mars and this source code will be frequently updated which may break your mods if they rely on any parts of it. You are not allowed to modify or redistribute any part of this source code except embedded in Surviving Mars mods.
 
 (insert footer.md.html here)
-<link rel="stylesheet" href="markdeep-docs.css">
